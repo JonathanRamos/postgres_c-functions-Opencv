@@ -1,3 +1,10 @@
+/* 
+ *  UNIVERSITY OF SAO PAULO - ICMC - GBDI http://www.gbdi.icmc.usp.br/
+ *  Author: Jonathan Ramos, jonathan@usp.br 
+ *  File: my_postgres_functions.cpp
+ * 
+ */
+
 #include "cplusplus_header.h"
 
 

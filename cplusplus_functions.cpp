@@ -1,5 +1,11 @@
 #include "cplusplus_header.h"
 
+/* UNIVERSITY OF SAO PAULO - ICMC - GBDI http://www.gbdi.icmc.usp.br/
+
+ *  Author: Jonathan Ramos, jonathan@usp.br 
+ *  File: cplusplus_functions.cpp
+ */
+
 /**
  * Returns a string of bytes from a cv:Mat type.
  * <p>

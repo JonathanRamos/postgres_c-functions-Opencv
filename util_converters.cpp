@@ -1,5 +1,11 @@
 #include "cplusplus_header.h"
 
+/* UNIVERSITY OF SAO PAULO - ICMC - GBDI http://www.gbdi.icmc.usp.br/
+
+ *  Author: Jonathan Ramos, jonathan@usp.br 
+ *  File: util_converters.cpp
+ */
+
 /**
  * Returns an Image object (OpenCV library cv::Mat) containing the 
  * image decoded from ByteArrayAsString 

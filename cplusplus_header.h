@@ -1,6 +1,7 @@
 /* 
- * File:   my_postgres_functions.h
- * Author: jonathan
+ *  UNIVERSITY OF SAO PAULO - ICMC - GBDI http://www.gbdi.icmc.usp.br/
+ *  Author: Jonathan Ramos, jonathan@usp.br 
+ *  File: cplusplus_header.h
  *
  * Created on September 2, 2015, 1:34 PM
  */
@@ -9,19 +10,20 @@
 #define	MY_POSTGRES_FUNCTIONS_H
 
 
-
+// Including C++ libraries
 #include <cstdio>
 #include <string>
 #include <iostream>
 #include <vector>
 
+// Including C++ OpenCV Libraries
 #include <opencv2/core.hpp>
 #include <opencv2/imgcodecs/imgcodecs_c.h>
 #include <opencv2/imgcodecs.hpp>
 #include "opencv2/opencv.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 
-// Including C functions
+// Including C libraries
 #ifdef __cplusplus
 extern "C" {
 #endif
