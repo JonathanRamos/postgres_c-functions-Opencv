@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>c_header.h</itemPath>
+      <itemPath>cplusplus_header.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>cplusplus_functions.cpp</itemPath>
+      <itemPath>my_postgres_functions.cpp</itemPath>
+      <itemPath>util_converters.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>/usr/local/include/opencv2</pElem>
+            <pElem>/usr/include/postgresql/9.4/server</pElem>
+          </incDir>
+          <commandLine>-shared</commandLine>
+        </ccTool>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibLibItem>opencv_calib3d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_core</linkerLibLibItem>
+            <linkerLibLibItem>opencv_features2d</linkerLibLibItem>
+            <linkerLibLibItem>opencv_flann</linkerLibLibItem>
+            <linkerLibLibItem>opencv_hal</linkerLibLibItem>
+            <linkerLibLibItem>opencv_highgui</linkerLibLibItem>
+            <linkerLibLibItem>opencv_imgcodecs</linkerLibLibItem>
+            <linkerLibLibItem>opencv_imgproc</linkerLibLibItem>
+            <linkerLibLibItem>opencv_ml</linkerLibLibItem>
+            <linkerLibLibItem>opencv_objdetect</linkerLibLibItem>
+            <linkerLibLibItem>opencv_photo</linkerLibLibItem>
+            <linkerLibLibItem>opencv_shape</linkerLibLibItem>
+            <linkerLibLibItem>opencv_stitching</linkerLibLibItem>
+            <linkerLibLibItem>opencv_superres</linkerLibLibItem>
+            <linkerLibLibItem>opencv_ts</linkerLibLibItem>
+            <linkerLibLibItem>opencv_video</linkerLibLibItem>
+            <linkerLibLibItem>opencv_videoio</linkerLibLibItem>
+            <linkerLibLibItem>opencv_videostab</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="c_header.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cplusplus_functions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cplusplus_header.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="my_postgres_functions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="util_converters.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>true</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="c_header.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cplusplus_functions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="cplusplus_header.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="my_postgres_functions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="util_converters.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
