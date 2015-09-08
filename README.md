@@ -1,7 +1,4 @@
-<b><p2> READ ME <p2></b>
-
-How to use
-
+<b><p1> README - How to use<p1></b>
 Important notes:
 Please consider the recommendations for c functions in postgres sql: 
 http://www.postgresql.org/docs/8.2/static/xfunc-c.html
