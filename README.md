@@ -21,18 +21,6 @@ OpenCV. An example of including dynamic libraries can be seen in: https://www.yo
 
 Postgres Examples:
 
-CREATE OR REPLACE FUNCTION openImage(varchar)
-  RETURNS integer AS
-'/home/jonathan/NetBeansProjects/exampleso/dist/Debug/GNU-Linux-x86/libexampleso.so', 'openImage'
-  LANGUAGE c IMMUTABLE STRICT
-  COST 1;
-ALTER FUNCTION openImage(varchar)
-  OWNER TO postgres;
-
-  SELECT openImage('//home/jonathan/Downloads/teste.jpg')
-
-
-
 CREATE OR REPLACE FUNCTION get_imgsize(bytea)
   RETURNS bytea AS
 '/home/jonathan/NetBeansProjects/exampleso/dist/Debug/GNU-Linux-x86/libexampleso.so', 'get_imgsize'
