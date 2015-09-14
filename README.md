@@ -19,6 +19,20 @@ I personally find making a Makefile by hand hard, since you have to include dyna
 OpenCV. An example of including dynamic libraries can be seen in: https://www.youtube.com/watch?v=UFsJ4P5QYKQ
 
 
+Makefile example:
+
+g++ -shared   -c -g -I/usr/local/include/opencv2 -I/usr/include/postgresql/9.4/server -fPIC  -MMD -MP -MF "build/Debug/GNU-Linux-x86/cplusplus_functions.o.d" -o build/Debug/GNU-Linux-x86/cplusplus_functions.o cplusplus_functions.cpp
+mkdir -p build/Debug/GNU-Linux-x86
+rm -f "build/Debug/GNU-Linux-x86/my_postgres_functions.o.d"
+g++ -shared   -c -g -I/usr/local/include/opencv2 -I/usr/include/postgresql/9.4/server -fPIC  -MMD -MP -MF "build/Debug/GNU-Linux-x86/my_postgres_functions.o.d" -o build/Debug/GNU-Linux-x86/my_postgres_functions.o my_postgres_functions.cpp
+mkdir -p build/Debug/GNU-Linux-x86
+rm -f "build/Debug/GNU-Linux-x86/util_converters.o.d"
+g++ -shared   -c -g -I/usr/local/include/opencv2 -I/usr/include/postgresql/9.4/server -fPIC  -MMD -MP -MF "build/Debug/GNU-Linux-x86/util_converters.o.d" -o build/Debug/GNU-Linux-x86/util_converters.o util_converters.cpp
+mkdir -p dist/Debug/GNU-Linux-x86
+g++ -shared    -o dist/Debug/GNU-Linux-x86/libexampleso.so build/Debug/GNU-Linux-x86/cplusplus_functions.o build/Debug/GNU-Linux-x86/my_postgres_functions.o build/Debug/GNU-Linux-x86/util_converters.o -lopencv_calib3d -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_hal -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_ml -lopencv_objdetect -lopencv_photo -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videoio -lopencv_videostab -shared -fPIC
+
+
+
 Postgres Examples:
 
 CREATE OR REPLACE FUNCTION get_imgsize(bytea)
