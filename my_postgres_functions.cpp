@@ -82,6 +82,48 @@ extern "C" {
         ArrayType *res = construct_array(imgSizeArray, 2, INT4OID, 4, true, 'i');
         PG_RETURN_ARRAYTYPE_P(res);
     }
+    
+    PG_FUNCTION_INFO_V1(euclidean_distance);
+
+    Datum euclidean_distance(PG_FUNCTION_ARGS) {
+        u_int32_t oid0;
+        u_int32_t oid1;
+
+        bytea *byte_array0;
+        bytea *byte_array1;
+
+        BasicArrayObject<float> features0;
+        BasicArrayObject<float> features1;
+
+        size_t dimensions;
+
+        EuclideanDistance<BasicArrayObject<float> > euclidean;
+
+        oid0        = PG_GETARG_INT32(0);
+        byte_array0 = PG_GETARG_BYTEA_P(1);
+        oid1        = PG_GETARG_INT32(2);
+        byte_array1 = PG_GETARG_BYTEA_P(3);
+        dimensions  = PG_GETARG_INT32(4);
+
+        features0 = ByteArrayToFloatArrayObject(oid0, byte_array0, dimensions);
+        features1 = ByteArrayToFloatArrayObject(oid1, byte_array1, dimensions);
+        
+        double *res = (double *) palloc(sizeof(double)); 
+
+        *res = euclidean.getDistance(features0, features1);
+        //*res = (double) dimensions;
+         PG_RETURN_FLOAT8((double) *res);
+        
+//         Datum* imgSizeArray = (Datum*) palloc(sizeof (Datum) * 3);
+////        imgSizeArray[0] = (unsigned int) *features0.get(0);
+////        imgSizeArray[1] = (unsigned int) *features0.get(1);
+////        imgSizeArray[2] = (unsigned int) *features0.get(2);
+//
+//        // Construct the array to be returned back to the database client
+//        ArrayType *res = construct_array(imgSizeArray, 3, INT4OID, 4, true, 'i');
+//        PG_RETURN_ARRAYTYPE_P(res);
+        
+    }
 
 #ifdef __cplusplus
 }

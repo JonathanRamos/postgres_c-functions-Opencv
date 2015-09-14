@@ -65,6 +65,24 @@ bytea* Mat2ByteArray(cv::Mat& image) {
 
     // Return final bytea
     return DatumGetByteaP(bytes);
+
+
 }
+
+BasicArrayObject<float> ByteArrayToFloatArrayObject(u_int32_t oid, bytea *byte_array, size_t dimensions) {
+    std::string byte_string(VARDATA(byte_array), VARSIZE(byte_array) - VARHDRSZ);
+    std::istringstream iss(byte_string);
+
+    std::vector<float> features(byte_string.begin(), byte_string.end());
+//    for (size_t i = 0; i < dimensions; ++i) {
+//        iss >> features[i];
+//    }
+   
+
+    return BasicArrayObject<float>(oid, features);
+}
+
+
+
 
 

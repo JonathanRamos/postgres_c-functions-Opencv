@@ -23,6 +23,11 @@
 #include "opencv2/opencv.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 
+#include "SimS/include/hermes/EuclideanDistance.h"
+// #include <hermes/ManhattanDistance.h>
+// #include <hermes/ChebyshevDistance.h>
+#include "SimS/include/util/BasicArrayObject.h"
+
 // Including C libraries
 #ifdef __cplusplus
 extern "C" {
@@ -42,6 +47,7 @@ extern "C" {
 cv::Mat cannyEdgeDetection(cv::Mat& image);
 cv::Mat ByteArray2Mat(bytea *imagem);
 bytea* Mat2ByteArray(cv::Mat& image);
+BasicArrayObject<float> ByteArrayToFloatArrayObject(u_int32_t oid, bytea *byte_array, size_t dimensions);
 
 
 #endif	/* MY_POSTGRES_FUNCTIONS_H */
