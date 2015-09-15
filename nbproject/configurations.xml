@@ -11,6 +11,310 @@
                    displayName="Resource Files"
                    projectFiles="true">
     </logicalFolder>
+    <logicalFolder name="SimS" displayName="SimS" projectFiles="true">
+      <logicalFolder name="include" displayName="include" projectFiles="true">
+        <logicalFolder name="arboretum" displayName="arboretum" projectFiles="true">
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/CNSCache.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/CStorage.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stBNode-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stBNode.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stBTree-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stBTree.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCellId.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stClientPageManager.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCommon.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCommonIO.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCompress.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCountingTree.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMCollection-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMCollection.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMNode-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMNode.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMTree-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMTree.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDFNode-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDFNode.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDFTree-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDFTree.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDiskPageManager.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDiskPageServer.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDummyNode.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDummyTree-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDummyTree.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFDASE-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFDASE.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFastMapper-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFastMapper.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFractalDimension-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFractalDimension.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGHNode.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGHTree-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGHTree.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGenericPriorityQueue-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGenericPriorityQueue.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGnuplot.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGnuplot3D.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stHistogram-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stHistogram.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stInputQuery-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stInputQuery.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stLevelDiskAccess.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stLineFitting-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stLineFitting.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stListPriorityQueue.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stListResult-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stListResult.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMAMView-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMAMView.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMGrid-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMGrid.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMMNode.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMMTree-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMMTree.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMNode-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMNode.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMTree-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMTree.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMemoryPageManager.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMetricAccessMethod.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMetricHistogram-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMetricHistogram.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMetricTree.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMultiObject.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stObject.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stOmni-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stOmni.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPage.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPageCache.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPageManager.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPageServer.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPartitionHash-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPartitionHash.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPartitionNode.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPlainDiskPageManager.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPointSet.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stQueryHint.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stRNode-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stRNode.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stRTree-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stRTree.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stResult-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stResult.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSeqNode-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSeqNode.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSeqTree-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSeqTree.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSlimNode-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSlimNode.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSlimTree-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSlimTree.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stStructUtils.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stTreeInformation.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stTreeResult-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stTreeResult.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stUtil-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stUtil.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVPNode.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVPTree-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVPTree.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVectorResult-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVectorResult.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="artemis" displayName="artemis" projectFiles="true">
+          <logicalFolder name="extractor" displayName="extractor" projectFiles="true">
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/BICHistogramExtractor-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/BICHistogramExtractor.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorLayout-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorLayout.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorStructure-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorStructure.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorTemperature-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorTemperature.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/DaubechiesExtractor-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/DaubechiesExtractor.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/DiscreteCosineTransformation.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/EdgeHistogram.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/EdgeHistogramExtractor-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/EdgeHistogramExtractor.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/Extractor.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HMMDColorSystem.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HSVColorSystem.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaarExtractor-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaarExtractor.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaralickExtractor-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaralickExtractor.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaralickFeature.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/LocalBinaryPatternExtractor-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/LocalBinaryPatternExtractor.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/MetricHistogram-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/MetricHistogram.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/NormalizedHistogram-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/NormalizedHistogram.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/RotationInvariantLBPExtractor-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/RotationInvariantLBPExtractor.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/SRGBColorSystem.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ScalableColor-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ScalableColor.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TextureBrowsing-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TextureBrowsing.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TextureSpectrum-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TextureSpectrum.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TotalColorHistogram-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TotalColorHistogram.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/Wavelets-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/Wavelets.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/XYZColorSystem.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/YCrCbColorSystem.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ZernikeExtractor-inl.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ZernikeExtractor.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="image" displayName="image" projectFiles="true">
+            <logicalFolder name="bmp" displayName="bmp" projectFiles="true">
+              <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/bmp/BmpLib.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="dicom" displayName="dicom" projectFiles="true">
+              <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/dicom/DcmLib.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="jpg" displayName="jpg" projectFiles="true">
+              <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/jpg/JpgLib.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="krl" displayName="krl" projectFiles="true">
+              <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/krl/FileHandler.h</itemPath>
+              <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/krl/KrlLib.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="png" displayName="png" projectFiles="true">
+              <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/png/PngLib.h</itemPath>
+            </logicalFolder>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/ImageBase.h</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/Pixel.h</itemPath>
+          </logicalFolder>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/Artemis.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="hermes" displayName="hermes" projectFiles="true">
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/BrayCurtisDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/BrayCurtisDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/CanberraDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/CanberraDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ChebyshevDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ChebyshevDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ColorLayoutDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ColorLayoutDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/DTWDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/DTWDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/DistanceFunction.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/EuclideanDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/EuclideanDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/Hermes.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/JeffreyDivergenceDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/JeffreyDivergenceDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/KullbackLeiblerDivergenceDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/KullbackLeiblerDivergenceDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/LEdit-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/LEdit.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MahalanobisDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MahalanobisDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ManhattanDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ManhattanDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MetricHistogramDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MetricHistogramDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MorositaDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MorositaDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/QuiSquareDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/QuiSquareDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SpearmanDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SpearmanDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SquaredChordDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SquaredChordDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SumProductDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SumProductDistance.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/WarpDistance-inl.h</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/WarpDistance.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="util" displayName="util" projectFiles="true">
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/include/util/BasicArrayObject.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="lib" displayName="lib" projectFiles="true">
+        <logicalFolder name="arboretumgcc"
+                       displayName="arboretumgcc"
+                       projectFiles="true">
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/lib/arboretumgcc/Makefile</itemPath>
+        </logicalFolder>
+        <logicalFolder name="artemisgcc" displayName="artemisgcc" projectFiles="true">
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/lib/artemisgcc/Makefile</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="arboretum" displayName="arboretum" projectFiles="true">
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/CStorage.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/readme.txt</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stCellId.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stCompress.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stCountingTree.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stDBMNode.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stDFNode.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stDiskPageManager.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stDummyNode.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stGHNode.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stGnuplot.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stGnuplot3D.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stLevelDiskAccess.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stListPriorityQueue.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMGrid.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMMNode.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMNode.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMemoryPageManager.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMetricHistogram.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stPage.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stPartitionNode.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stPlainDiskPageManager.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stPointSet.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stResult.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stSeqNode.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stSlimNode.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stStructUtils.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stTreeInformation.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stUtil.cpp</itemPath>
+          <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stVPNode.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="artemis" displayName="artemis" projectFiles="true">
+          <logicalFolder name="extractor" displayName="extractor" projectFiles="true">
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/DiscreteCosineTransformation.cpp</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/EdgeHistogram.cpp</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/HMMDColorSystem.cpp</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/HSVColorSystem.cpp</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/HaralickFeature.cpp</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/SRGBColorSystem.cpp</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/XYZColorSystem.cpp</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/YCrCbColorSystem.cpp</itemPath>
+          </logicalFolder>
+          <logicalFolder name="image" displayName="image" projectFiles="true">
+            <logicalFolder name="bmp" displayName="bmp" projectFiles="true">
+              <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/bmp/BmpLib.cpp</itemPath>
+            </logicalFolder>
+            <logicalFolder name="dicom" displayName="dicom" projectFiles="true">
+              <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/dicom/DcmLib.cpp</itemPath>
+            </logicalFolder>
+            <logicalFolder name="jpg" displayName="jpg" projectFiles="true">
+              <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/jpg/JpgLib.cpp</itemPath>
+            </logicalFolder>
+            <logicalFolder name="krl" displayName="krl" projectFiles="true">
+              <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/krl/FileHandler.cpp</itemPath>
+              <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/krl/KrlLib.cpp</itemPath>
+            </logicalFolder>
+            <logicalFolder name="png" displayName="png" projectFiles="true">
+              <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/png/PngLib.cpp</itemPath>
+            </logicalFolder>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/ImageBase.cpp</itemPath>
+            <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/Pixel.cpp</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/.gitignore</itemPath>
+      <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/CONTRIBUTORS</itemPath>
+      <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/LICENSE</itemPath>
+      <itemPath>/home/jonathan/NetBeansProjects/exampleso/SimS/README.md</itemPath>
+    </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
@@ -30,6 +334,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>/home/jonathan/NetBeansProjects/exampleso/SimS</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="2">
@@ -71,6 +378,1256 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/.gitignore"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/CONTRIBUTORS"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/LICENSE"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/README.md"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/CNSCache.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/CStorage.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stBNode-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stBNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stBTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stBTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCellId.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stClientPageManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCommon.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCommonIO.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCompress.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCountingTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMCollection-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMCollection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMNode-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDFNode-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDFNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDFTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDFTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDiskPageManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDiskPageServer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDummyNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDummyTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDummyTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFDASE-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFDASE.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFastMapper-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFastMapper.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFractalDimension-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFractalDimension.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGHNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGHTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGHTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGenericPriorityQueue-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGenericPriorityQueue.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGnuplot.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGnuplot3D.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stHistogram-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stHistogram.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stInputQuery-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stInputQuery.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stLevelDiskAccess.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stLineFitting-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stLineFitting.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stListPriorityQueue.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stListResult-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stListResult.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMAMView-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMAMView.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMGrid-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMGrid.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMMNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMMTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMMTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMNode-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMemoryPageManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMetricAccessMethod.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMetricHistogram-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMetricHistogram.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMetricTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMultiObject.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stObject.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stOmni-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stOmni.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPage.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPageCache.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPageManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPageServer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPartitionHash-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPartitionHash.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPartitionNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPlainDiskPageManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPointSet.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stQueryHint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stRNode-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stRNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stRTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stRTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stResult-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stResult.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSeqNode-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSeqNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSeqTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSeqTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSlimNode-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSlimNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSlimTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSlimTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stStructUtils.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stTreeInformation.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stTreeResult-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stTreeResult.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stUtil-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stUtil.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVPNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVPTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVPTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVectorResult-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVectorResult.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/Artemis.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/BICHistogramExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/BICHistogramExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorLayout-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorLayout.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorStructure-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorStructure.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorTemperature-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorTemperature.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/DaubechiesExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/DaubechiesExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/DiscreteCosineTransformation.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/EdgeHistogram.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/EdgeHistogramExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/EdgeHistogramExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/Extractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HMMDColorSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HSVColorSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaarExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaarExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaralickExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaralickExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaralickFeature.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/LocalBinaryPatternExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/LocalBinaryPatternExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/MetricHistogram-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/MetricHistogram.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/NormalizedHistogram-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/NormalizedHistogram.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/RotationInvariantLBPExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/RotationInvariantLBPExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/SRGBColorSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ScalableColor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ScalableColor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TextureBrowsing-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TextureBrowsing.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TextureSpectrum-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TextureSpectrum.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TotalColorHistogram-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TotalColorHistogram.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/Wavelets-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/Wavelets.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/XYZColorSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/YCrCbColorSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ZernikeExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ZernikeExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/ImageBase.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/Pixel.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/bmp/BmpLib.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/dicom/DcmLib.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/jpg/JpgLib.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/krl/FileHandler.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/krl/KrlLib.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/png/PngLib.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/BrayCurtisDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/BrayCurtisDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/CanberraDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/CanberraDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ChebyshevDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ChebyshevDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ColorLayoutDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ColorLayoutDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/DTWDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/DTWDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/DistanceFunction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/EuclideanDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/EuclideanDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/Hermes.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/JeffreyDivergenceDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/JeffreyDivergenceDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/KullbackLeiblerDivergenceDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/KullbackLeiblerDivergenceDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/LEdit-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/LEdit.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MahalanobisDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MahalanobisDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ManhattanDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ManhattanDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MetricHistogramDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MetricHistogramDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MorositaDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MorositaDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/QuiSquareDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/QuiSquareDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SpearmanDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SpearmanDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SquaredChordDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SquaredChordDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SumProductDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SumProductDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/WarpDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/WarpDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/util/BasicArrayObject.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/lib/arboretumgcc/Makefile"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/lib/artemisgcc/Makefile"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/CStorage.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/readme.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stCellId.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stCompress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stCountingTree.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stDBMNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stDFNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stDiskPageManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stDummyNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stGHNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stGnuplot.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stGnuplot3D.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stLevelDiskAccess.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stListPriorityQueue.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMGrid.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMMNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMemoryPageManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMetricHistogram.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stPage.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stPartitionNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stPlainDiskPageManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stPointSet.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stResult.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stSeqNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stSlimNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stStructUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stTreeInformation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stUtil.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stVPNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/DiscreteCosineTransformation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/EdgeHistogram.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/HMMDColorSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/HSVColorSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/HaralickFeature.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/SRGBColorSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/XYZColorSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/YCrCbColorSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/ImageBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/Pixel.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/bmp/BmpLib.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/dicom/DcmLib.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/jpg/JpgLib.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/krl/FileHandler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/krl/KrlLib.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/png/PngLib.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
       <item path="c_header.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="cplusplus_functions.cpp" ex="false" tool="1" flavor2="0">
@@ -102,6 +1659,1256 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/.gitignore"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/CONTRIBUTORS"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/LICENSE"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/README.md"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/CNSCache.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/CStorage.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stBNode-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stBNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stBTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stBTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCellId.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stClientPageManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCommon.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCommonIO.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCompress.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stCountingTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMCollection-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMCollection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMNode-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDBMTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDFNode-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDFNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDFTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDFTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDiskPageManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDiskPageServer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDummyNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDummyTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stDummyTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFDASE-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFDASE.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFastMapper-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFastMapper.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFractalDimension-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stFractalDimension.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGHNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGHTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGHTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGenericPriorityQueue-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGenericPriorityQueue.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGnuplot.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stGnuplot3D.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stHistogram-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stHistogram.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stInputQuery-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stInputQuery.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stLevelDiskAccess.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stLineFitting-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stLineFitting.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stListPriorityQueue.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stListResult-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stListResult.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMAMView-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMAMView.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMGrid-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMGrid.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMMNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMMTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMMTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMNode-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMemoryPageManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMetricAccessMethod.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMetricHistogram-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMetricHistogram.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMetricTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stMultiObject.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stObject.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stOmni-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stOmni.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPage.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPageCache.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPageManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPageServer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPartitionHash-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPartitionHash.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPartitionNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPlainDiskPageManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stPointSet.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stQueryHint.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stRNode-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stRNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stRTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stRTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stResult-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stResult.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSeqNode-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSeqNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSeqTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSeqTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSlimNode-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSlimNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSlimTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stSlimTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stStructUtils.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stTreeInformation.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stTreeResult-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stTreeResult.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stUtil-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stUtil.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVPNode.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVPTree-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVPTree.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVectorResult-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/arboretum/stVectorResult.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/Artemis.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/BICHistogramExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/BICHistogramExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorLayout-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorLayout.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorStructure-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorStructure.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorTemperature-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ColorTemperature.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/DaubechiesExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/DaubechiesExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/DiscreteCosineTransformation.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/EdgeHistogram.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/EdgeHistogramExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/EdgeHistogramExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/Extractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HMMDColorSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HSVColorSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaarExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaarExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaralickExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaralickExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/HaralickFeature.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/LocalBinaryPatternExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/LocalBinaryPatternExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/MetricHistogram-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/MetricHistogram.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/NormalizedHistogram-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/NormalizedHistogram.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/RotationInvariantLBPExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/RotationInvariantLBPExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/SRGBColorSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ScalableColor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ScalableColor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TextureBrowsing-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TextureBrowsing.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TextureSpectrum-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TextureSpectrum.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TotalColorHistogram-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/TotalColorHistogram.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/Wavelets-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/Wavelets.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/XYZColorSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/YCrCbColorSystem.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ZernikeExtractor-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/extractor/ZernikeExtractor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/ImageBase.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/Pixel.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/bmp/BmpLib.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/dicom/DcmLib.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/jpg/JpgLib.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/krl/FileHandler.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/krl/KrlLib.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/artemis/image/png/PngLib.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/BrayCurtisDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/BrayCurtisDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/CanberraDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/CanberraDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ChebyshevDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ChebyshevDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ColorLayoutDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ColorLayoutDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/DTWDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/DTWDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/DistanceFunction.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/EuclideanDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/EuclideanDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/Hermes.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/JeffreyDivergenceDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/JeffreyDivergenceDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/KullbackLeiblerDivergenceDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/KullbackLeiblerDivergenceDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/LEdit-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/LEdit.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MahalanobisDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MahalanobisDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ManhattanDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/ManhattanDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MetricHistogramDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MetricHistogramDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MorositaDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/MorositaDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/QuiSquareDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/QuiSquareDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SpearmanDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SpearmanDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SquaredChordDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SquaredChordDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SumProductDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/SumProductDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/WarpDistance-inl.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/hermes/WarpDistance.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/include/util/BasicArrayObject.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/lib/arboretumgcc/Makefile"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/lib/artemisgcc/Makefile"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/CStorage.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/readme.txt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stCellId.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stCompress.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stCountingTree.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stDBMNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stDFNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stDiskPageManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stDummyNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stGHNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stGnuplot.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stGnuplot3D.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stLevelDiskAccess.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stListPriorityQueue.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMGrid.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMMNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMemoryPageManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stMetricHistogram.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stPage.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stPartitionNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stPlainDiskPageManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stPointSet.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stResult.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stSeqNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stSlimNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stStructUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stTreeInformation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stUtil.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/arboretum/stVPNode.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/DiscreteCosineTransformation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/EdgeHistogram.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/HMMDColorSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/HSVColorSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/HaralickFeature.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/SRGBColorSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/XYZColorSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/extractor/YCrCbColorSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/ImageBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/Pixel.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/bmp/BmpLib.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/dicom/DcmLib.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/jpg/JpgLib.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/krl/FileHandler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/krl/KrlLib.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jonathan/NetBeansProjects/exampleso/SimS/src/artemis/image/png/PngLib.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
       <item path="c_header.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="cplusplus_functions.cpp" ex="false" tool="1" flavor2="0">
