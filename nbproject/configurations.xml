@@ -43,6 +43,7 @@
           <incDir>
             <pElem>/usr/local/include/opencv2</pElem>
             <pElem>/usr/include/postgresql/9.4/server</pElem>
+            <pElem>/home/jonathan/NetBeansProjects/exampleso/SimS/include/</pElem>
           </incDir>
           <commandLine>-shared</commandLine>
         </ccTool>
@@ -66,6 +67,7 @@
             <linkerLibLibItem>opencv_video</linkerLibLibItem>
             <linkerLibLibItem>opencv_videoio</linkerLibLibItem>
             <linkerLibLibItem>opencv_videostab</linkerLibLibItem>
+            <linkerLibFileItem>/home/jonathan/NetBeansProjects/exampleso/SimS/lib/libartemis-shared.so</linkerLibFileItem>
           </linkerLibItems>
         </linkerTool>
       </compileType>

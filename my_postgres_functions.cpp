@@ -114,16 +114,99 @@ extern "C" {
         //*res = (double) dimensions;
          PG_RETURN_FLOAT8((double) *res);
         
-//         Datum* imgSizeArray = (Datum*) palloc(sizeof (Datum) * 3);
-////        imgSizeArray[0] = (unsigned int) *features0.get(0);
-////        imgSizeArray[1] = (unsigned int) *features0.get(1);
-////        imgSizeArray[2] = (unsigned int) *features0.get(2);
+    }
+
+    PG_FUNCTION_INFO_V1(lbp_extractor);
+
+    Datum lbp_extractor(PG_FUNCTION_ARGS) {
+        if (PG_ARGISNULL(0)) {
+            ereport(ERROR, (errmsg("[ERROR] Null arrays not accepted.\n")));
+        }
+
+        Signature imgSignature;
+        LocalBinaryPatternExtractor<Signature, Image> *descriptor;
+
+        // ByteArray to Image
+        bytea* inputByteArray = PG_GETARG_BYTEA_P(0);
+        Image image = ByteArray2Image(inputByteArray);
+        
+//        bytea* bytes = Image2ByteArray(image);
+
+        // Extract
+        descriptor = new LocalBinaryPatternExtractor<Signature, Image>();
+        descriptor->setNumFeatures(256); // TODO: WHY 256?
+        descriptor->generateSignature(image, imgSignature);
+
+        // Signature to ByteArray
+        bytea * characteristics = Signature2ByteArray(imgSignature);
+
+       // PG_RETURN_BYTEA_P(bytes);
+        PG_RETURN_BYTEA_P(characteristics);
+        
+        
+        
+//        Datum* imgSizeArray = (Datum*) palloc(sizeof (Datum) * 2);
+//        imgSizeArray[0] = image.getHeight();
+//        imgSizeArray[1] = image.getWidth();
 //
 //        // Construct the array to be returned back to the database client
-//        ArrayType *res = construct_array(imgSizeArray, 3, INT4OID, 4, true, 'i');
+//        ArrayType *res = construct_array(imgSizeArray, 2, INT4OID, 4, true, 'i');
 //        PG_RETURN_ARRAYTYPE_P(res);
         
     }
+////
+////    PG_FUNCTION_INFO_V1(color_layout_extractor);
+////
+////    Datum color_layout_extractor(PG_FUNCTION_ARGS) {
+////        if(PG_ARGISNULL(0)) {
+////            ereport(ERROR, (errmsg("[ERROR] Null array not accepted.\n")));
+////        }
+////
+////        Signature imgSignature;
+////        ColorLayoutExtractor<Signature,Image> *descriptor;
+////
+////        // ByteArray to Image
+////        bytea * inputByteArray = PG_GETARG_BYTEA_P(0);
+////        Image image = ByteArray2Image(inputByteArray);
+////
+////        // Extract
+////        descriptor = new ColorLayoutExtractor<Signature, Image>();
+////        descriptor->setNumFeatures(256); // TODO: WHY 256?
+////        descriptor->setNumBlocks(256); // TODO: WHY 256?
+////        descriptor->generateSignature(image, imgSignature);
+////
+////        // Signature to ByteArray
+////        bytea * characteristics = Signature2ByteArray(imgSignature);
+////
+////        PG_RETURN_BYTEA_P(characteristics);
+////        //PG_RETURN_BYTEA_P(PG_GETARG_BYTEA_P(0));
+////    }
+////
+////    PG_FUNCTION_INFO_V1(color_structure_extractor);
+////
+////    Datum color_structure_extractor(PG_FUNCTION_ARGS) {
+////        if(PG_ARGISNULL(0)) {
+////            ereport(ERROR, (errmsg("[ERROR] Null array not accepted.\n")));
+////        }
+////
+////        Signature imgSignature;
+////        ColorStructureExtractor<Signature,Image> *descriptor;
+////
+////        // ByteArray to Image
+////        bytea * inputByteArray = PG_GETARG_BYTEA_P(0);
+////        Image image = ByteArray2Image(inputByteArray);
+////
+////        // Extract
+////        descriptor = new ColorStructureExtractor<Signature, Image>();
+////        descriptor->setNumFeatures(256); // TODO: WHY 256?
+////        descriptor->generateSignature(image, imgSignature);
+////
+////        // Signature to ByteArray
+////        bytea * characteristics = Signature2ByteArray(imgSignature);
+////
+////        PG_RETURN_BYTEA_P(characteristics);
+////        //PG_RETURN_BYTEA_P(PG_GETARG_BYTEA_P(0));
+////    }
 
 #ifdef __cplusplus
 }

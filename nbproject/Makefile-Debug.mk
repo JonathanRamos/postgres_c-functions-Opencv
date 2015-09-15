@@ -54,11 +54,13 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=-lopencv_calib3d -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_hal -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_ml -lopencv_objdetect -lopencv_photo -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videoio -lopencv_videostab
+LDLIBSOPTIONS=-lopencv_calib3d -lopencv_core -lopencv_features2d -lopencv_flann -lopencv_hal -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_ml -lopencv_objdetect -lopencv_photo -lopencv_shape -lopencv_stitching -lopencv_superres -lopencv_ts -lopencv_video -lopencv_videoio -lopencv_videostab /home/jonathan/NetBeansProjects/exampleso/SimS/lib/libartemis-shared.so
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
 	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libexampleso.${CND_DLIB_EXT}
+
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libexampleso.${CND_DLIB_EXT}: /home/jonathan/NetBeansProjects/exampleso/SimS/lib/libartemis-shared.so
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libexampleso.${CND_DLIB_EXT}: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
@@ -67,17 +69,17 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libexampleso.${CND_DLIB_EXT}: ${OBJEC
 ${OBJECTDIR}/cplusplus_functions.o: cplusplus_functions.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I/usr/local/include/opencv2 -I/usr/include/postgresql/9.4/server -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/cplusplus_functions.o cplusplus_functions.cpp
+	$(COMPILE.cc) -g -I/usr/local/include/opencv2 -I/usr/include/postgresql/9.4/server -I/home/jonathan/NetBeansProjects/exampleso/SimS/include/ -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/cplusplus_functions.o cplusplus_functions.cpp
 
 ${OBJECTDIR}/my_postgres_functions.o: my_postgres_functions.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I/usr/local/include/opencv2 -I/usr/include/postgresql/9.4/server -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/my_postgres_functions.o my_postgres_functions.cpp
+	$(COMPILE.cc) -g -I/usr/local/include/opencv2 -I/usr/include/postgresql/9.4/server -I/home/jonathan/NetBeansProjects/exampleso/SimS/include/ -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/my_postgres_functions.o my_postgres_functions.cpp
 
 ${OBJECTDIR}/util_converters.o: util_converters.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -I/usr/local/include/opencv2 -I/usr/include/postgresql/9.4/server -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/util_converters.o util_converters.cpp
+	$(COMPILE.cc) -g -I/usr/local/include/opencv2 -I/usr/include/postgresql/9.4/server -I/home/jonathan/NetBeansProjects/exampleso/SimS/include/ -fPIC  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/util_converters.o util_converters.cpp
 
 # Subprojects
 .build-subprojects:
