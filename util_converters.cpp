@@ -88,9 +88,8 @@ BasicArrayObject<float> ByteArrayToFloatArrayObject(u_int32_t oid, bytea *byte_a
 }
 
 // ByteArray to Image
-
-Image ByteArray2Image(bytea* inputByteArray) {
-    Image outputImage;
+Image * ByteArray2Image(const bytea * inputByteArray) {
+    Image * outputImage = new Image();
 
     // Collect the input image byte stream as string
     std::string str(VARDATA(inputByteArray), VARSIZE(inputByteArray) - VARHDRSZ);
@@ -101,37 +100,35 @@ Image ByteArray2Image(bytea* inputByteArray) {
     cv::Mat image(cv::imdecode(data_mat, CV_LOAD_IMAGE_COLOR));
 
     // XXX: HOW TO SET THEM???
-    outputImage.setBitsPerPixel(sizeof (image.at<float>(0, 0)));
-    outputImage.setChannels(image.channels());
-    outputImage.setFilename("asdf.jpg");
-    outputImage.setImageID(0001);
+    outputImage->setFilename("asdf.jpg");
+    outputImage->setImageID(1);
 
+    outputImage->setChannels(image.channels());
+    outputImage->setBitsPerPixel(image.elemSize());
 
+    outputImage->createPixelMatrix(image.cols, image.rows);
 
-    outputImage.createPixelMatrix(image.cols, image.rows);
-    
-//    std::memcpy(outputimage)
-
-    for (u_int32_t x = 0; x < outputImage.getWidth(); ++x) {
-        for (u_int32_t y = 0; y < outputImage.getHeight(); ++y) {
-            Pixel p(image.at<cv::Vec3b>(y, x)[0], image.at<cv::Vec3b>(y, x)[1], image.at<cv::Vec3b>(y, x)[2]);
-            outputImage.setPixel(x, y, p);
+    for(u_int32_t x = 0; x < outputImage->getWidth(); ++x) {
+        for(u_int32_t y = 0; y < outputImage->getHeight(); ++y) {
+            Pixel p(image.at<cv::Vec3b>(y,x)[0],
+                    image.at<cv::Vec3b>(y,x)[1],
+                    image.at<cv::Vec3b>(y,x)[2]);
+            outputImage->setPixel(x, y, p);
         } // end for y
     } // end for x
 
     return outputImage;
 } // end function ByteArray2Image
 
-// Image to ByteArray
-
-//bytea* Image2ByteArray(const Image& inputImage) {
-//    
+//// Image to ByteArray
+//bytea * Image2ByteArray(const Image& inputImage) {
+//    Pixel p;
 //
 //    cv::Mat image(inputImage.getWidth(), inputImage.getHeight(), inputImage.getChannels());
 //
-//    for (u_int32_t x = 0; x < inputImage.getWidth(); ++x) {
+//    for(u_int32_t x = 0; x < inputImage.getWidth(); ++x) {
 //        for (u_int32_t y = 0; y < inputImage.getHeight(); ++y) {
-//            Pixel p = inputImage.getPixel(x, y);
+//            p = inputImage.getPixel(x, y);
 //            image.at<cv::Vec3b>(x, y)[0] = p.getRedPixelValue();
 //            image.at<cv::Vec3b>(x, y)[1] = p.getGreenPixelValue();
 //            image.at<cv::Vec3b>(x, y)[2] = p.getBluePixelValue();
@@ -163,7 +160,7 @@ Image ByteArray2Image(bytea* inputByteArray) {
 //    // Return final bytea
 //    return DatumGetByteaP(outputBytes);
 //} // end function Image2ByteArray
-
+//
 //Signature ByteArray2Signature(const bytea * inputByteArray) {
 //    Signature outputSignature;
 //
@@ -175,10 +172,10 @@ Image ByteArray2Image(bytea* inputByteArray) {
 //
 //    return outputSignature;
 //} // end function ByteArray2Signature
-//
+
 bytea * Signature2ByteArray(Signature& imgSignature) {
     // allocs space for byte array
-    bytea * outputBytes = (bytea *) palloc(imgSignature.getSerializedSize() * sizeof (bytea));
+    bytea * outputBytes = (bytea *) palloc(imgSignature.getSerializedSize() * sizeof(bytea) + VARHDRSZ);
 
     //copy from local variable memory to the returning varible memory
     memcpy(VARDATA(outputBytes), imgSignature.serialize(), imgSignature.getSerializedSize());
@@ -189,8 +186,3 @@ bytea * Signature2ByteArray(Signature& imgSignature) {
     // Return final bytea
     return DatumGetByteaP(outputBytes);
 } // end function Signature2ByteArray
-
-
-
-
-
