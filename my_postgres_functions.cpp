@@ -86,34 +86,82 @@ extern "C" {
     PG_FUNCTION_INFO_V1(euclidean_distance);
 
     Datum euclidean_distance(PG_FUNCTION_ARGS) {
-        u_int32_t oid0;
-        u_int32_t oid1;
-
         bytea *byte_array0;
         bytea *byte_array1;
 
-        BasicArrayObject<float> features0;
-        BasicArrayObject<float> features1;
+        BasicArrayObject<float> *features0;
+        BasicArrayObject<float> *features1;
 
         size_t dimensions;
+        double *result;
 
-        EuclideanDistance<BasicArrayObject<float> > euclidean;
+        EuclideanDistance< BasicArrayObject<float> > euclidean;
 
-        oid0        = PG_GETARG_INT32(0);
-        byte_array0 = PG_GETARG_BYTEA_P(1);
-        oid1        = PG_GETARG_INT32(2);
-        byte_array1 = PG_GETARG_BYTEA_P(3);
-        dimensions  = PG_GETARG_INT32(4);
+        byte_array0 = PG_GETARG_BYTEA_P(0);
+        byte_array1 = PG_GETARG_BYTEA_P(1);
+        dimensions  = PG_GETARG_INT32(2);
 
-        features0 = ByteArrayToFloatArrayObject(oid0, byte_array0, dimensions);
-        features1 = ByteArrayToFloatArrayObject(oid1, byte_array1, dimensions);
-        
-        double *res = (double *) palloc(sizeof(double)); 
+        features0 = ByteArrayToFloatArrayObject(0, byte_array0, dimensions);
+        features1 = ByteArrayToFloatArrayObject(1, byte_array1, dimensions);
 
-        *res = euclidean.getDistance(features0, features1);
-        //*res = (double) dimensions;
-         PG_RETURN_FLOAT8((double) *res);
-        
+        result = (double *)(palloc(sizeof(double)));
+        *result = euclidean.getDistance(*features0, *features1);
+
+        PG_RETURN_FLOAT8(*result);
+    }
+
+    PG_FUNCTION_INFO_V1(manhattan_distance);
+
+    Datum manhattan_distance(PG_FUNCTION_ARGS) {
+        bytea *byte_array0;
+        bytea *byte_array1;
+
+        BasicArrayObject<float> *features0;
+        BasicArrayObject<float> *features1;
+
+        size_t dimensions;
+        double *result;
+
+        ManhattanDistance< BasicArrayObject<float> > manhattan;
+
+        byte_array0 = PG_GETARG_BYTEA_P(0);
+        byte_array1 = PG_GETARG_BYTEA_P(1);
+        dimensions  = PG_GETARG_INT32(2);
+
+        features0 = ByteArrayToFloatArrayObject(0, byte_array0, dimensions);
+        features1 = ByteArrayToFloatArrayObject(1, byte_array1, dimensions);
+
+        result = (double *)(palloc(sizeof(double)));
+        *result = manhattan.getDistance(*features0, *features1);
+
+        PG_RETURN_FLOAT8(*result);
+    }
+
+    PG_FUNCTION_INFO_V1(chebyshev_distance);
+
+    Datum chebyshev_distance(PG_FUNCTION_ARGS) {
+        bytea *byte_array0;
+        bytea *byte_array1;
+
+        BasicArrayObject<float> *features0;
+        BasicArrayObject<float> *features1;
+
+        size_t dimensions;
+        double *result;
+
+        ChebyshevDistance< BasicArrayObject<float> > chebyshev;
+
+        byte_array0 = PG_GETARG_BYTEA_P(0);
+        byte_array1 = PG_GETARG_BYTEA_P(1);
+        dimensions  = PG_GETARG_INT32(2);
+
+        features0 = ByteArrayToFloatArrayObject(0, byte_array0, dimensions);
+        features1 = ByteArrayToFloatArrayObject(1, byte_array1, dimensions);
+
+        result = (double *)(palloc(sizeof(double)));
+        *result = chebyshev.getDistance(*features0, *features1);
+
+        PG_RETURN_FLOAT8(*result);
     }
 
     PG_FUNCTION_INFO_V1(lbp_extractor);

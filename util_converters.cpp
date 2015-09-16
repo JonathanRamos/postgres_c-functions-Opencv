@@ -69,22 +69,23 @@ bytea* Mat2ByteArray(cv::Mat& image) {
 
 }
 
-BasicArrayObject<float> ByteArrayToFloatArrayObject(u_int32_t oid, bytea *byte_array, size_t dimensions) {
-    std::string byte_string(VARDATA(byte_array), VARSIZE(byte_array) - VARHDRSZ);
+BasicArrayObject<float> *ByteArrayToFloatArrayObject(u_int32_t oid,
+                                                     bytea *byte_array,
+                                                     size_t dimensions) {
+    string byte_string(VARDATA(byte_array), VARSIZE(byte_array) - VARHDRSZ);
     std::istringstream iss(byte_string);
-    std::vector<float> my_vec;
+    vector<float> features;
+    float value;
 
-    float i;
+    while (iss >> value) {
+        features.push_back(value);
 
-    while (iss >> i) {
-        my_vec.push_back(i);
-
-        if (iss.peek() == ' ')
+        if (iss.peek() == ' ') {
             iss.ignore();
+        }
     }
 
-
-    return BasicArrayObject<float>(oid, my_vec);
+    return new BasicArrayObject<float>(oid, features);
 }
 
 // ByteArray to Image

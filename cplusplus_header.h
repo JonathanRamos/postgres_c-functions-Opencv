@@ -26,8 +26,8 @@
 // ------------------------------------------------------------
 // PH Includes
 #include "hermes/EuclideanDistance.h"
-// #include <hermes/ManhattanDistance.h>
-// #include <hermes/ChebyshevDistance.h>
+#include <hermes/ManhattanDistance.h>
+#include <hermes/ChebyshevDistance.h>
 #include "util/BasicArrayObject.h"
 
 
@@ -68,7 +68,9 @@ typedef BasicArrayObject<double> Signature;
 cv::Mat cannyEdgeDetection(cv::Mat& image);
 cv::Mat ByteArray2Mat(bytea *imagem);
 bytea* Mat2ByteArray(cv::Mat& image);
-BasicArrayObject<float> ByteArrayToFloatArrayObject(u_int32_t oid, bytea *byte_array, size_t dimensions);
+BasicArrayObject<float> *ByteArrayToFloatArrayObject(u_int32_t oid,
+													 bytea *byte_array,
+													 size_t dimensions);
 
 Image ByteArray2Image(bytea *inputByteArray);
 bytea* Image2ByteArray(const Image& inputImage);
