@@ -15,7 +15,7 @@ extern "C" {
 #ifdef PG_MODULE_MAGIC
     PG_MODULE_MAGIC;
 #endif
-    
+
     // ---------------------------------------------------------------------------
     PG_FUNCTION_INFO_V1(canny_detector);
 
@@ -37,7 +37,7 @@ extern "C" {
         cv::Mat image = ByteArray2Mat(imagem);
 
         if (image.empty()) {
-            ereport(ERROR, (errmsg("ERROR: ByteArray decoding failed")));
+            ereport(ERROR, (errmsg("ByteArray decoding failed")));
         }
 
         cv::Mat edge = cannyEdgeDetection(image);
@@ -71,7 +71,7 @@ extern "C" {
         cv::Mat image = ByteArray2Mat(imagem);
 
         if (image.empty()) {
-            ereport(ERROR, (errmsg("ERROR: ByteArray decoding failed")));
+            ereport(ERROR, (errmsg("ByteArray decoding failed")));
         }
 
         Datum* imgSizeArray = (Datum*) palloc(sizeof (Datum) * 2);
@@ -82,38 +82,80 @@ extern "C" {
         ArrayType *res = construct_array(imgSizeArray, 2, INT4OID, 4, true, 'i');
         PG_RETURN_ARRAYTYPE_P(res);
     }
-    
+
     PG_FUNCTION_INFO_V1(euclidean_distance);
 
     Datum euclidean_distance(PG_FUNCTION_ARGS) {
-        u_int32_t oid0;
-        u_int32_t oid1;
+        if (PG_ARGISNULL(0) || PG_ARGISNULL(1)) {
+            ereport(ERROR, (errmsg("Null arrays not accepted")));
+        }
 
-        bytea *byte_array0;
-        bytea *byte_array1;
+        bytea *byte_array0 = PG_GETARG_BYTEA_P(0);
+        bytea *byte_array1 = PG_GETARG_BYTEA_P(1);
 
-        BasicArrayObject<float> features0;
-        BasicArrayObject<float> features1;
+        Signature features0 = ByteArray2BasicArrayObject(byte_array0);
+        Signature features1 = ByteArray2BasicArrayObject(byte_array1);
 
-        size_t dimensions;
+        double *res = (double *) palloc(sizeof (double));
 
-        EuclideanDistance<BasicArrayObject<float> > euclidean;
+        try {
+            EuclideanDistance<Signature> euclidean;
+            *res = euclidean.getDistance(features0, features1);
+        } catch (std::length_error) {
+            ereport(ERROR, (errmsg("Features vectors must have same length")));
+        }
 
-        oid0        = PG_GETARG_INT32(0);
-        byte_array0 = PG_GETARG_BYTEA_P(1);
-        oid1        = PG_GETARG_INT32(2);
-        byte_array1 = PG_GETARG_BYTEA_P(3);
-        dimensions  = PG_GETARG_INT32(4);
+        PG_RETURN_FLOAT8((double) *res);
+    }
 
-        features0 = ByteArrayToFloatArrayObject(oid0, byte_array0, dimensions);
-        features1 = ByteArrayToFloatArrayObject(oid1, byte_array1, dimensions);
-        
-        double *res = (double *) palloc(sizeof(double)); 
+    PG_FUNCTION_INFO_V1(manhattan_distance);
 
-        *res = euclidean.getDistance(features0, features1);
-        //*res = (double) dimensions;
-         PG_RETURN_FLOAT8((double) *res);
-        
+    Datum manhattan_distance(PG_FUNCTION_ARGS) {
+        if (PG_ARGISNULL(0) || PG_ARGISNULL(1)) {
+            ereport(ERROR, (errmsg("Null arrays not accepted")));
+        }
+
+        bytea *byte_array0 = PG_GETARG_BYTEA_P(0);
+        bytea *byte_array1 = PG_GETARG_BYTEA_P(1);
+
+        Signature features0 = ByteArray2BasicArrayObject(byte_array0);
+        Signature features1 = ByteArray2BasicArrayObject(byte_array1);
+
+        double *result = (double *) (palloc(sizeof (double)));
+
+        try {
+            ManhattanDistance< Signature > manhattan;
+            *result = manhattan.getDistance(features0, features1);
+        } catch (std::length_error) {
+            ereport(ERROR, (errmsg("Features vectors must have same length")));
+        }
+
+        PG_RETURN_FLOAT8(*result);
+    }
+
+    PG_FUNCTION_INFO_V1(chebyshev_distance);
+
+    Datum chebyshev_distance(PG_FUNCTION_ARGS) {
+        if (PG_ARGISNULL(0) || PG_ARGISNULL(1)) {
+            ereport(ERROR, (errmsg("Null arrays not accepted")));
+        }
+
+        const bytea *byte_array0 = PG_GETARG_BYTEA_P(0);
+        const bytea *byte_array1 = PG_GETARG_BYTEA_P(1);
+
+        Signature features0 = ByteArray2BasicArrayObject(byte_array0);
+        Signature features1 = ByteArray2BasicArrayObject(byte_array1);
+
+        double *result = (double *) (palloc(sizeof (double)));
+
+        try {
+            ChebyshevDistance< Signature > chebyshev;
+            *result = chebyshev.getDistance(features0, features1);
+        } catch (std::length_error) {
+            ereport(ERROR, (errmsg("Features vectors must have same length")));
+        }
+
+        PG_RETURN_FLOAT8((double) *result);
     }
 
     PG_FUNCTION_INFO_V1(lbp_extractor);
@@ -123,90 +165,86 @@ extern "C" {
             ereport(ERROR, (errmsg("[ERROR] Null arrays not accepted.\n")));
         }
 
+        // ByteArray to Image
+        bytea *inputByteArray = PG_GETARG_BYTEA_P(0);
+        Image *image = ByteArray2Image(inputByteArray);
+
         Signature imgSignature;
         LocalBinaryPatternExtractor<Signature, Image> *descriptor;
-
-        // ByteArray to Image
-        bytea* inputByteArray = PG_GETARG_BYTEA_P(0);
-        Image image = ByteArray2Image(inputByteArray);
-        
-//        bytea* bytes = Image2ByteArray(image);
+        descriptor = new LocalBinaryPatternExtractor<Signature, Image>();
 
         // Extract
-        descriptor = new LocalBinaryPatternExtractor<Signature, Image>();
         descriptor->setNumFeatures(256); // TODO: WHY 256?
-        descriptor->generateSignature(image, imgSignature);
+        descriptor->generateSignature(*image, imgSignature);
 
         // Signature to ByteArray
-        bytea * characteristics = Signature2ByteArray(imgSignature);
+        bytea* characteristics = Signature2ByteArray(imgSignature);
 
-       // PG_RETURN_BYTEA_P(bytes);
+        //        PG_RETURN_TEXT_P(characteristics);
+
+        //        ArrayType *res = construct_array(characteristics, imgSignature.getSize(), INT4OID, 4, true, 'i');
+        //        double *a = (double *) (palloc(sizeof(double)));
+        //        *a = (double) *imgSignature.get(0);
+        //        a[1] = (double) *imgSignature.get(1);
+        ////        *a = 50;
+        //        PG_RETURN_FLOAT8(*a);
+
+        //   PG_RETURN_ARRAYTYPE_P(res);
+
         PG_RETURN_BYTEA_P(characteristics);
-        
-        
-        
-//        Datum* imgSizeArray = (Datum*) palloc(sizeof (Datum) * 2);
-//        imgSizeArray[0] = image.getHeight();
-//        imgSizeArray[1] = image.getWidth();
-//
-//        // Construct the array to be returned back to the database client
-//        ArrayType *res = construct_array(imgSizeArray, 2, INT4OID, 4, true, 'i');
-//        PG_RETURN_ARRAYTYPE_P(res);
-        
     }
-////
-////    PG_FUNCTION_INFO_V1(color_layout_extractor);
-////
-////    Datum color_layout_extractor(PG_FUNCTION_ARGS) {
-////        if(PG_ARGISNULL(0)) {
-////            ereport(ERROR, (errmsg("[ERROR] Null array not accepted.\n")));
-////        }
-////
-////        Signature imgSignature;
-////        ColorLayoutExtractor<Signature,Image> *descriptor;
-////
-////        // ByteArray to Image
-////        bytea * inputByteArray = PG_GETARG_BYTEA_P(0);
-////        Image image = ByteArray2Image(inputByteArray);
-////
-////        // Extract
-////        descriptor = new ColorLayoutExtractor<Signature, Image>();
-////        descriptor->setNumFeatures(256); // TODO: WHY 256?
-////        descriptor->setNumBlocks(256); // TODO: WHY 256?
-////        descriptor->generateSignature(image, imgSignature);
-////
-////        // Signature to ByteArray
-////        bytea * characteristics = Signature2ByteArray(imgSignature);
-////
-////        PG_RETURN_BYTEA_P(characteristics);
-////        //PG_RETURN_BYTEA_P(PG_GETARG_BYTEA_P(0));
-////    }
-////
-////    PG_FUNCTION_INFO_V1(color_structure_extractor);
-////
-////    Datum color_structure_extractor(PG_FUNCTION_ARGS) {
-////        if(PG_ARGISNULL(0)) {
-////            ereport(ERROR, (errmsg("[ERROR] Null array not accepted.\n")));
-////        }
-////
-////        Signature imgSignature;
-////        ColorStructureExtractor<Signature,Image> *descriptor;
-////
-////        // ByteArray to Image
-////        bytea * inputByteArray = PG_GETARG_BYTEA_P(0);
-////        Image image = ByteArray2Image(inputByteArray);
-////
-////        // Extract
-////        descriptor = new ColorStructureExtractor<Signature, Image>();
-////        descriptor->setNumFeatures(256); // TODO: WHY 256?
-////        descriptor->generateSignature(image, imgSignature);
-////
-////        // Signature to ByteArray
-////        bytea * characteristics = Signature2ByteArray(imgSignature);
-////
-////        PG_RETURN_BYTEA_P(characteristics);
-////        //PG_RETURN_BYTEA_P(PG_GETARG_BYTEA_P(0));
-////    }
+
+    //    PG_FUNCTION_INFO_V1(color_layout_extractor);
+    //
+    //    Datum color_layout_extractor(PG_FUNCTION_ARGS) {
+    //        if (PG_ARGISNULL(0)) {
+    //            ereport(ERROR, (errmsg("[ERROR] Null array not accepted.\n")));
+    //        }
+    //
+    //        Signature imgSignature;
+    //        ColorLayoutExtractor<Signature, Image> *descriptor;
+    //
+    //        // ByteArray to Image
+    //        bytea * inputByteArray = PG_GETARG_BYTEA_P(0);
+    //        Image * image = ByteArray2Image(inputByteArray);
+    //
+    //        // Extract
+    //        descriptor = new ColorLayoutExtractor<Signature, Image>();
+    //        descriptor->setNumFeatures(256); // TODO: WHY 256?
+    //        descriptor->setNumBlocks(256); // TODO: WHY 256?
+    //        descriptor->generateSignature(*image, imgSignature);
+    //
+    //        // Signature to ByteArray
+    //        bytea * characteristics = Signature2ByteArray(imgSignature);
+    //
+    //        PG_RETURN_BYTEA_P(characteristics);
+    //    }
+
+    //    PG_FUNCTION_INFO_V1(color_structure_extractor);
+    //
+    //    Datum color_structure_extractor(PG_FUNCTION_ARGS) {
+    //        if (PG_ARGISNULL(0)) {
+    //            ereport(ERROR, (errmsg("[ERROR] Null array not accepted.\n")));
+    //        }
+    //
+    //        Signature imgSignature;
+    //        ColorStructureExtractor<Signature, Image> *descriptor;
+    //
+    //        // ByteArray to Image
+    //        bytea * inputByteArray = PG_GETARG_BYTEA_P(0);
+    //        Image * image = ByteArray2Image(inputByteArray);
+    //
+    //        // Extract
+    //        descriptor = new ColorStructureExtractor<Signature, Image>();
+    //        descriptor->setNumFeatures(256); // TODO: WHY 256?
+    //        descriptor->generateSignature(*image, imgSignature);
+    //
+    //        // Signature to ByteArray
+    //        bytea * characteristics = Signature2ByteArray(imgSignature);
+    //
+    //        PG_RETURN_BYTEA_P(characteristics);
+    //    }
+
 
 #ifdef __cplusplus
 }

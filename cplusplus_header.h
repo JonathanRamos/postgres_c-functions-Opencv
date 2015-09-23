@@ -26,8 +26,8 @@
 // ------------------------------------------------------------
 // PH Includes
 #include "hermes/EuclideanDistance.h"
-// #include <hermes/ManhattanDistance.h>
-// #include <hermes/ChebyshevDistance.h>
+ #include <hermes/ManhattanDistance.h>
+ #include <hermes/ChebyshevDistance.h>
 #include "util/BasicArrayObject.h"
 
 
@@ -40,6 +40,7 @@
 #include  "artemis/extractor/LocalBinaryPatternExtractor.h" // <artemis/extractor/LocalBinaryPatternExtractor.h>
 #include "artemis/extractor/ColorStructure.h" // <artemis/extractor/ColorStructure.h>
 #include  "artemis/extractor/ColorLayout.h"
+#include "artemis/extractor/NormalizedHistogram.h"
 
 
 // Including C libraries
@@ -63,18 +64,19 @@ extern "C" {
 }
 #endif
 
-typedef BasicArrayObject<double> Signature;
+typedef BasicArrayObject<float> Signature;
+typedef float SignatureElemDType;
 
 cv::Mat cannyEdgeDetection(cv::Mat& image);
-cv::Mat ByteArray2Mat(bytea *imagem);
+cv::Mat ByteArray2Mat(const bytea *imagem);
 bytea* Mat2ByteArray(cv::Mat& image);
-BasicArrayObject<float> ByteArrayToFloatArrayObject(u_int32_t oid, bytea *byte_array, size_t dimensions);
+Signature ByteArray2BasicArrayObject(const bytea *byte_array);
 
-Image ByteArray2Image(bytea *inputByteArray);
-bytea* Image2ByteArray(const Image& inputImage);
+Image* ByteArray2Image(const bytea *inputByteArray);
+//bytea* Image2ByteArray(const Image& inputImage);
 //
 //Signature ByteArray2Signature(const bytea * inputByteArray);
- bytea * Signature2ByteArray(Signature& imgSignature);
+bytea* Signature2ByteArray(Signature& imgSignature);
 
 
 #endif	/* MY_POSTGRES_FUNCTIONS_H */

@@ -15,7 +15,7 @@
  * @param  bytea (Postgres) representing na images
  * @return      the image in Mat (OpenCV) format.
  */
-cv::Mat ByteArray2Mat(bytea *imagem) {
+cv::Mat ByteArray2Mat(const bytea *imagem) {
     // Collect the input image byte stream as string
     std::string str(VARDATA(imagem), VARSIZE(imagem) - VARHDRSZ);
 
@@ -69,59 +69,72 @@ bytea* Mat2ByteArray(cv::Mat& image) {
 
 }
 
-BasicArrayObject<float> ByteArrayToFloatArrayObject(u_int32_t oid, bytea *byte_array, size_t dimensions) {
-    std::string byte_string(VARDATA(byte_array), VARSIZE(byte_array) - VARHDRSZ);
-    std::istringstream iss(byte_string);
-    std::vector<float> my_vec;
+/* 
+ * PH code
+ */
 
-    float i;
+Signature ByteArray2BasicArrayObject(const bytea *byte_array) {
+//   std::string byte_string(VARDATA(byte_array), VARSIZE(byte_array) - VARHDRSZ);
+//   std::istringstream iss(byte_string);
+    vector<SignatureElemDType> my_vec;
+    
+    int tam = VARSIZE(byte_array) - VARHDRSZ;
+    
+    SignatureElemDType *data = (SignatureElemDType *) palloc(tam);
+    
+    memcpy(data, VARDATA(byte_array), tam);
+  
+//    double *i = data;
+    int i = 0;
 
-    while (iss >> i) {
-        my_vec.push_back(i);
-
-        if (iss.peek() == ' ')
-            iss.ignore();
+    while (i++ < tam/sizeof(SignatureElemDType)) {
+        my_vec.push_back(data[i]);
     }
+    
+//    while (iss >> i) {
+//        my_vec.push_back(i);
+//
+//        if (iss.peek() == ' ')
+//            iss.ignore();
+//    }
 
-
-    return BasicArrayObject<float>(oid, my_vec);
+    return Signature(0,my_vec);
 }
 
+/* 
+ * Canabrava's code
+ */
 // ByteArray to Image
 
-Image ByteArray2Image(bytea* inputByteArray) {
-    Image outputImage;
+Image* ByteArray2Image(const bytea * inputByteArray) {
+    Image *outputImage = new Image();
 
-    // Collect the input image byte stream as string
-    std::string str(VARDATA(inputByteArray), VARSIZE(inputByteArray) - VARHDRSZ);
-
-    // Encode de bytearray as image considering the original image has 3 channels (i.e. RGB)
-    std::vector<char> vectordata(str.begin(), str.end());
-    cv::Mat data_mat(vectordata, true);
-    cv::Mat image(cv::imdecode(data_mat, CV_LOAD_IMAGE_COLOR));
+    cv::Mat image = ByteArray2Mat(inputByteArray);
 
     // XXX: HOW TO SET THEM???
-    outputImage.setBitsPerPixel(sizeof (image.at<float>(0, 0)));
-    outputImage.setChannels(image.channels());
-    outputImage.setFilename("asdf.jpg");
-    outputImage.setImageID(0001);
+    outputImage->setFilename("asdf.jpg");
+    outputImage->setImageID(1);
+    outputImage->setChannels(image.channels());
+    outputImage->setBitsPerPixel(image.elemSize());
 
+    outputImage->createPixelMatrix(image.cols, image.rows);
 
+    Pixel p;
 
-    outputImage.createPixelMatrix(image.cols, image.rows);
-    
-//    std::memcpy(outputimage)
-
-    for (u_int32_t x = 0; x < outputImage.getWidth(); ++x) {
-        for (u_int32_t y = 0; y < outputImage.getHeight(); ++y) {
-            Pixel p(image.at<cv::Vec3b>(y, x)[0], image.at<cv::Vec3b>(y, x)[1], image.at<cv::Vec3b>(y, x)[2]);
-            outputImage.setPixel(x, y, p);
+    for (u_int32_t x = 0; x < outputImage->getWidth(); ++x) {
+        for (u_int32_t y = 0; y < outputImage->getHeight(); ++y) {
+            p.setRGBPixelValue(image.at<cv::Vec3b>(y, x)[2], image.at<cv::Vec3b>(y, x)[1], image.at<cv::Vec3b>(y, x)[0]);
+            outputImage->setPixel(x, y, p);
         } // end for y
     } // end for x
 
     return outputImage;
 } // end function ByteArray2Image
 
+
+/* 
+ * Canabrava's code
+ */
 // Image to ByteArray
 
 //bytea* Image2ByteArray(const Image& inputImage) {
@@ -172,22 +185,39 @@ Image ByteArray2Image(bytea* inputByteArray) {
 //
 //    // Encode de bytearray as image considering the original image has 3 channels (i.e. RGB)
 //    outputSignature.unserializeFromString(str);
-//
+//+ VARHDRSZ
 //    return outputSignature;
 //} // end function ByteArray2Signature
 //
-bytea * Signature2ByteArray(Signature& imgSignature) {
-    // allocs space for byte array
-    bytea * outputBytes = (bytea *) palloc(imgSignature.getSerializedSize() * sizeof (bytea));
 
-    //copy from local variable memory to the returning varible memory
-    memcpy(VARDATA(outputBytes), imgSignature.serialize(), imgSignature.getSerializedSize());
+/* 
+ * Canabrava's code
+ */
+bytea* Signature2ByteArray(Signature& imgSignature) {
+    
+    int tam = imgSignature.getSize()*sizeof(SignatureElemDType);
+    // allocs space for byte array
+    bytea * outputBytes = (bytea *) palloc(tam);
+
+
+
+       SignatureElemDType* imgSizeArray = (SignatureElemDType*) palloc(tam);
+
+        for (register int i=0; i < imgSignature.getSize(); i++) {
+            imgSizeArray[i] =  *imgSignature.get(i);
+        }
+
+    //    return imgSizeArray;
+    
+
+    //copy from local variable memory to the returning variable memory
+    memcpy(VARDATA(outputBytes), imgSizeArray,  tam);
 
     //Set the bytea size value, which is requeried by postgres bytea type
-    SET_VARSIZE(outputBytes, VARHDRSZ + imgSignature.getSerializedSize());
-
-    // Return final bytea
-    return DatumGetByteaP(outputBytes);
+    SET_VARSIZE(outputBytes, tam);
+    //
+    //    // Return final bytea
+    return outputBytes;
 } // end function Signature2ByteArray
 
 
