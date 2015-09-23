@@ -1,0 +1,33 @@
+CREATE OR REPLACE FUNCTION lbp_extractor(bytea) 
+RETURNS bytea AS 
+'/home/jonathan/NetBeansProjects/exampleso/dist/Debug/GNU-Linux-x86/libexampleso.so', 'lbp_extractor' 
+LANGUAGE c IMMUTABLE STRICT COST 1; 
+ALTER FUNCTION lbp_extractor(bytea) OWNER TO postgres;
+
+SELECT lbp_extractor((SELECT imagem FROM imagem WHERE id = '11'))
+
+
+CREATE OR REPLACE FUNCTION euclidean_distance(bytea, bytea) 
+RETURNS bytea AS 
+'/home/jonathan/NetBeansProjects/exampleso/dist/Debug/GNU-Linux-x86/libexampleso.so', 'euclidean_distance' 
+LANGUAGE c IMMUTABLE STRICT COST 1; 
+ALTER FUNCTION lbp_extractor(bytea, bytea) OWNER TO postgres;
+
+SELECT euclidean_distance(decode('10 20 34', 'escape'), decode('10 20 32', 'escape'))
+
+SELECT euclidean_distance((SELECT lbp_extractor((SELECT imagem FROM imagem WHERE id = '11'))), (SELECT lbp_extractor((SELECT imagem FROM imagem WHERE id = '11'))))
+
+
+
+CREATe OR REPLACE FUNCTION extract_lbp_features() 
+RETURNS trigger AS $extract_lbp_features$ 
+BEGIN
+    NEW.histogram := (SELECT lbp_extractor(NEW.imagem));
+    return NEW;
+END; 
+$extract_lbp_features$ LANGUAGE 'plpgsql'
+
+CREATE TRIGGER extract_lbp_features
+    BEFORE INSERT OR UPDATE ON imagem
+    FOR EACH ROW
+    EXECUTE PROCEDURE extract_lbp_features();
