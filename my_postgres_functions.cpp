@@ -93,70 +93,74 @@ extern "C" {
         bytea *byte_array0 = PG_GETARG_BYTEA_P(0);
         bytea *byte_array1 = PG_GETARG_BYTEA_P(1);
 
-        Signature features0 = ByteArray2BasicArrayObject(byte_array0);
-        Signature features1 = ByteArray2BasicArrayObject(byte_array1);
+        vector<SignatureElemDType> features0 = ByteArray2BasicArrayObject(byte_array0);
+        vector<SignatureElemDType> features1 = ByteArray2BasicArrayObject(byte_array1);
+
+
 
         double *res = (double *) palloc(sizeof (double));
 
         try {
-            EuclideanDistance<Signature> euclidean;
+            EuclideanDistance< vector<SignatureElemDType> > euclidean;
             *res = euclidean.getDistance(features0, features1);
         } catch (std::length_error) {
             ereport(ERROR, (errmsg("Features vectors must have same length")));
         }
 
+
+
         PG_RETURN_FLOAT8((double) *res);
     }
 
-    PG_FUNCTION_INFO_V1(manhattan_distance);
-
-    Datum manhattan_distance(PG_FUNCTION_ARGS) {
-        if (PG_ARGISNULL(0) || PG_ARGISNULL(1)) {
-            ereport(ERROR, (errmsg("Null arrays not accepted")));
-        }
-
-        bytea *byte_array0 = PG_GETARG_BYTEA_P(0);
-        bytea *byte_array1 = PG_GETARG_BYTEA_P(1);
-
-        Signature features0 = ByteArray2BasicArrayObject(byte_array0);
-        Signature features1 = ByteArray2BasicArrayObject(byte_array1);
-
-        double *result = (double *) (palloc(sizeof (double)));
-
-        try {
-            ManhattanDistance< Signature > manhattan;
-            *result = manhattan.getDistance(features0, features1);
-        } catch (std::length_error) {
-            ereport(ERROR, (errmsg("Features vectors must have same length")));
-        }
-
-        PG_RETURN_FLOAT8(*result);
-    }
-
-    PG_FUNCTION_INFO_V1(chebyshev_distance);
-
-    Datum chebyshev_distance(PG_FUNCTION_ARGS) {
-        if (PG_ARGISNULL(0) || PG_ARGISNULL(1)) {
-            ereport(ERROR, (errmsg("Null arrays not accepted")));
-        }
-
-        const bytea *byte_array0 = PG_GETARG_BYTEA_P(0);
-        const bytea *byte_array1 = PG_GETARG_BYTEA_P(1);
-
-        Signature features0 = ByteArray2BasicArrayObject(byte_array0);
-        Signature features1 = ByteArray2BasicArrayObject(byte_array1);
-
-        double *result = (double *) (palloc(sizeof (double)));
-
-        try {
-            ChebyshevDistance< Signature > chebyshev;
-            *result = chebyshev.getDistance(features0, features1);
-        } catch (std::length_error) {
-            ereport(ERROR, (errmsg("Features vectors must have same length")));
-        }
-
-        PG_RETURN_FLOAT8((double) *result);
-    }
+    //    PG_FUNCTION_INFO_V1(manhattan_distance);
+    //
+    //    Datum manhattan_distance(PG_FUNCTION_ARGS) {
+    //        if (PG_ARGISNULL(0) || PG_ARGISNULL(1)) {
+    //            ereport(ERROR, (errmsg("Null arrays not accepted")));
+    //        }
+    //
+    //        bytea *byte_array0 = PG_GETARG_BYTEA_P(0);
+    //        bytea *byte_array1 = PG_GETARG_BYTEA_P(1);
+    //
+    //        Signature features0 = ByteArray2BasicArrayObject(byte_array0);
+    //        Signature features1 = ByteArray2BasicArrayObject(byte_array1);
+    //
+    //        double *result = (double *) (palloc(sizeof (double)));
+    //
+    //        try {
+    //            ManhattanDistance< Signature > manhattan;
+    //            *result = manhattan.getDistance(features0, features1);
+    //        } catch (std::length_error) {
+    //            ereport(ERROR, (errmsg("Features vectors must have same length")));
+    //        }
+    //
+    //        PG_RETURN_FLOAT8(*result);
+    //    }
+    //
+    //    PG_FUNCTION_INFO_V1(chebyshev_distance);
+    //
+    //    Datum chebyshev_distance(PG_FUNCTION_ARGS) {
+    //        if (PG_ARGISNULL(0) || PG_ARGISNULL(1)) {
+    //            ereport(ERROR, (errmsg("Null arrays not accepted")));
+    //        }
+    //
+    //        const bytea *byte_array0 = PG_GETARG_BYTEA_P(0);
+    //        const bytea *byte_array1 = PG_GETARG_BYTEA_P(1);
+    //
+    //        Signature features0 = ByteArray2BasicArrayObject(byte_array0);
+    //        Signature features1 = ByteArray2BasicArrayObject(byte_array1);
+    //
+    //        double *result = (double *) (palloc(sizeof (double)));
+    //
+    //        try {
+    //            ChebyshevDistance< Signature > chebyshev;
+    //            *result = chebyshev.getDistance(features0, features1);
+    //        } catch (std::length_error) {
+    //            ereport(ERROR, (errmsg("Features vectors must have same length")));
+    //        }
+    //
+    //        PG_RETURN_FLOAT8((double) *result);
+    //    }
 
 
 

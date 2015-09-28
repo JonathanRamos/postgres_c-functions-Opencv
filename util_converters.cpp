@@ -73,32 +73,20 @@ bytea* Mat2ByteArray(cv::Mat& image) {
  * PH code
  */
 
-Signature ByteArray2BasicArrayObject(const bytea *byte_array) {
-//   std::string byte_string(VARDATA(byte_array), VARSIZE(byte_array) - VARHDRSZ);
-//   std::istringstream iss(byte_string);
+vector<SignatureElemDType> ByteArray2BasicArrayObject(const bytea *byte_array) {
     vector<SignatureElemDType> my_vec;
-    
+
     int tam = VARSIZE(byte_array) - VARHDRSZ;
-    
-    SignatureElemDType *data = (SignatureElemDType *) palloc(tam);
-    
-    memcpy(data, VARDATA(byte_array), tam);
-  
-//    double *i = data;
-    int i = 0;
 
-    while (i++ < tam/sizeof(SignatureElemDType)) {
-        my_vec.push_back(data[i]);
+    SignatureElemDType a;
+
+    for (int x = 0; x < tam/sizeof (SignatureElemDType); x++) {
+        memcpy(&a, VARDATA(byte_array) + (sizeof (SignatureElemDType) * x), sizeof(SignatureElemDType));
+        my_vec.push_back(a);
     }
+   // Signature sig(0, my_vec);
     
-//    while (iss >> i) {
-//        my_vec.push_back(i);
-//
-//        if (iss.peek() == ' ')
-//            iss.ignore();
-//    }
-
-    return Signature(0,my_vec);
+    return my_vec;
 }
 
 /* 
@@ -190,31 +178,41 @@ Image* ByteArray2Image(const bytea * inputByteArray) {
 //} // end function ByteArray2Signature
 //
 
+//void float2Bytes(byte* bytes_temp[4], float float_variable) {
+//    memcpy(bytes_temp, (unsigned char*) (&float_variable), 4);
+//}
+
 /* 
  * Canabrava's code
  */
 bytea* Signature2ByteArray(Signature& imgSignature) {
-    
-    int tam = imgSignature.getSize()*sizeof(SignatureElemDType);
+
+    //    int tam = imgSignature.getSize() * sizeof (SignatureElemDType);
+    int tam = imgSignature.getSize();
+    int tam2 = sizeof (SignatureElemDType) * tam + VARHDRSZ;
     // allocs space for byte array
-    bytea * outputBytes = (bytea *) palloc(tam);
+    bytea * outputBytes = (bytea *) palloc(tam2);
 
+    const unsigned char *a;
 
+    for (int x = 0; x < tam; x++) {
+        memcpy(VARDATA(outputBytes) + (sizeof (SignatureElemDType) * x), imgSignature.get(x), sizeof (SignatureElemDType));
+    }
 
-       SignatureElemDType* imgSizeArray = (SignatureElemDType*) palloc(tam);
-
-        for (register int i=0; i < imgSignature.getSize(); i++) {
-            imgSizeArray[i] =  *imgSignature.get(i);
-        }
+    //    SignatureElemDType* imgSizeArray = (SignatureElemDType*) palloc(tam);
+    //
+    //    for (register int i = 0; i < imgSignature.getSize(); i++) {
+    //        imgSizeArray[i] = *imgSignature.get(i);
+    //    }
 
     //    return imgSizeArray;
-    
+
 
     //copy from local variable memory to the returning variable memory
-    memcpy(VARDATA(outputBytes), imgSizeArray,  tam);
+  //  memcpy(VARDATA(outputBytes), (unsigned char*) a, tam);
 
     //Set the bytea size value, which is requeried by postgres bytea type
-    SET_VARSIZE(outputBytes, tam);
+    SET_VARSIZE(outputBytes, tam2);
     //
     //    // Return final bytea
     return outputBytes;

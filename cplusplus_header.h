@@ -64,13 +64,15 @@ extern "C" {
 }
 #endif
 
-typedef BasicArrayObject<float> Signature;
-typedef float SignatureElemDType;
+
+typedef double SignatureElemDType;
+typedef BasicArrayObject<SignatureElemDType> Signature;
+
 
 cv::Mat cannyEdgeDetection(cv::Mat& image);
 cv::Mat ByteArray2Mat(const bytea *imagem);
 bytea* Mat2ByteArray(cv::Mat& image);
-Signature ByteArray2BasicArrayObject(const bytea *byte_array);
+vector<SignatureElemDType> ByteArray2BasicArrayObject(const bytea *byte_array);
 
 Image* ByteArray2Image(const bytea *inputByteArray);
 //bytea* Image2ByteArray(const Image& inputImage);
