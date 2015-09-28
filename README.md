@@ -55,3 +55,21 @@ ALTER FUNCTION canny_detector(bytea)
   OWNER TO postgres;
   
 SELECT canny_detector(imagem) FROM imagem WHERE id = '2'
+
+
+CREATE OR REPLACE FUNCTION lbp_extractor(bytea) 
+RETURNS bytea AS 
+'/home/jonathan/NetBeansProjects/exampleso/dist/Debug/GNU-Linux-x86/libexampleso.so', 'lbp_extractor' 
+LANGUAGE c IMMUTABLE STRICT COST 1; 
+ALTER FUNCTION lbp_extractor(bytea) OWNER TO postgres;
+
+
+CREATE OR REPLACE FUNCTION euclidean_distance(bytea, bytea) 
+RETURNS double precision AS 
+'/home/jonathan/NetBeansProjects/exampleso/dist/Debug/GNU-Linux-x86/libexampleso.so', 'euclidean_distance' 
+LANGUAGE c IMMUTABLE STRICT COST 1; 
+ALTER FUNCTION euclidean_distance(bytea, bytea) OWNER TO postgres;
+
+SELECT lbp_extractor((SELECT imagem FROM imagem WHERE id = '11'))
+
+SELECT euclidean_distance((SELECT lbp_extractor((SELECT imagem FROM imagem WHERE id = '12'))), (SELECT lbp_extractor((SELECT imagem FROM imagem WHERE id = '11'))))
